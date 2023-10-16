@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- bch nraj3ou java sous forme d une structure xml --> 
+<!ELEMENT BanqueService (conversion)>
+<!ELEMENT conversion (montant)>
+<!ELEMENT montant (#PCDATA)>
