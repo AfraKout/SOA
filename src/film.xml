@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cinema>
+  <Film id="lb78" type="comédie">
+    <titre>Les bronzes</titre>
+    <année>1978</année>
+    <réalisateur>Patrice leconte</réalisateur>
+    <role><nom>Popeye</nom><acteur>Thierry Lhermite</acteur></role>
+    <role><nom>Jean-Claude Dusse</nom><acteur>Michel Blanc</acteur></role>
+  </Film>
+   <Film id="gf94" type="comédie">
+    <titre>Grosse fatigue</titre>
+    <année>1994</année>
+    <réalisateur>Michel Blanc</réalisateur>
+    <role><nom>Patric Olivier</nom><acteur>Michel Blanc</acteur></role>
+    <role><nom>Carole Bouquet</nom><acteur>Carole Bouquet</acteur></role>
+  </Film>
+   <Producteur>
+    <nom>Daniel Toscan du Plantier</nom>
+  </Producteur>
+  <Producteur>
+    <nom>Yves Rousset-Rouard</nom>
+    <film ref='lb78' />
+  </Producteur>
+</Cinema>
+<!-- 
+Reponses au questions:
+1) Les titres de tous les films: 					//titre
+2) Les titres des films ou joue Michel Blanc: 		//Film [role/acteur='Michel Blanc']/titre
+3) Les types de films répertoriés: 					distinct-values(//Film/@type)
+4) Les rôles joués par Michel Blanc:				//role[acteur = "Michel Blanc']/nom
+5) L’acteur principal de chaque film (premier dans la distribution): //role[1]/acteur 
+-->
