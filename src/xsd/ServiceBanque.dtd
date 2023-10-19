@@ -3,3 +3,9 @@
 <!ELEMENT BanqueService (conversion)>
 <!ELEMENT conversion (montant)>
 <!ELEMENT montant (#PCDATA)>
+<!ELEMENT getcomptes ( compte+)>
+<!ELEMENT getcompte ( compte)>
+<!ELEMENT compte (code,solde,dateCreation)>
+<!ELEMENT code (#PCDATA)>
+<!ELEMENT solde (#PCDATA)>
+<!ELEMENT dateCreation (#PCDATA)>
