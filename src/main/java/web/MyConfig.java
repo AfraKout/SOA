@@ -6,14 +6,11 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MyConfig {
-
     @Bean
-    public ResourceConfig resourceConfig() {
-        // Specify the package where your JAX-RS resources are located
-        ResourceConfig jerseyServlet = new ResourceConfig().packages("web");
-
-        // jerseyServlet.register(SomeFeature.class);
-
+    public ResourceConfig resourceConfig(){
+        ResourceConfig jerseyServlet = new ResourceConfig();
+        jerseyServlet.register(CompteRestJaxRSAPI.class);
         return jerseyServlet;
+
     }
 }
